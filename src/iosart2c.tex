@@ -1,0 +1,107 @@
+% Journal:
+%   Journal of Ambient Intelligence and Smart Environments (JAISE), IOS Press
+%   Web Intelligence and Agent Systems: An International Journal (wias)
+%   Semantic Web: Interoperability, Usability, Applicability (SW)
+% Latex 2e
+% Test file iosart2c.tex
+
+%[seceqn,secfloat,secthm,crcready]
+
+% options: wias, jaise, sw
+\documentclass{iosart2c}
+
+
+\usepackage[T1]{fontenc}
+\usepackage{times}
+% begin jmora for pretty urls
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{color}  %for the colors
+\hypersetup{urlcolor=black,linkcolor=black,citecolor=black,colorlinks=true} % do not set the colors in the links
+% end jmora for pretty urls
+\usepackage{natbib}
+%\usepackage[dvips]{hyperref}
+\usepackage{amsmath}
+\usepackage{dcolumn}
+%\usepackage{endnotes}
+%\usepackage{ulem}
+\usepackage{graphics}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{afterpage}
+%\usepackage{listings}
+\newcommand{\code}[1]{{\small\textsf{#1}}}
+\newcommand{\fixedwidth}[1]{{\small\texttt{#1}}}
+\newcommand{\surl}[1]{{\small\url{#1}}}
+\newcommand{\note}[1]{\marginpar{\parbox{20mm}{\fontfamily{phv}\selectfont\tiny#1}}}
+\newcommand{\mybox}[1]{\mbox{{\small\textit{#1}}}}
+%\fontfamily{phv}\selectfont
+\newcommand{\ftable}[1]{{\footnotesize{#1}}}
+%\newcommand{\bo}[1] {\textcolor{blue}{[BO]\textit{#1}}} 
+%\newcommand{\jm}[1] {\textcolor{blue}{[JM]\textit{#1}}}
+%\newcommand{\ga}[1] {\textcolor{blue}{[GA]\textit{#1}}}
+%\newcommand{\ma}[1] {\textcolor{blue}{[MA]\textit{#1}}}
+%\newcommand{\todo}[1] {\textcolor{red}{[ToDo:]\textit{#1}}}
+\def\-{\discretionary{}{}{}} 
+%\usepackage{listings}
+
+
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+
+
+\firstpage{1} \lastpage{5} \volume{1} \pubyear{2011}
+
+
+\begin{document}
+\begin{frontmatter}                           % The preamble begins here.
+
+%
+%\pretitle{Pretitle}
+\title{From Smart Cities to Smart Lands}
+
+\runningtitle{From Smart Cities to Smart Lands}
+%\subtitle{Subtitle}
+
+%\review{Pascal Hitzler, Kno.e.sis Center, Wright State University, Dayton, OH, USA; Krzysztof Janowicz, University of California, Santa Barbara, USA}{Michael Lutz, European Commission -- Joint Research Centre, Italy; Willem Robert van Hage, VU Amsterdam, The Netherlands; Tomi Kauppinen, University of M\"unster, Germany}{}
+
+
+\author[A]{\fnms{Nelson} \snm{Piedra}},
+\author[B]{\fnms{Victor} \snm{Saquicela}},
+\author[B]{\fnms{Mauricio} \snm{Espinoza}},
+and
+\author[C]{\fnms{Boris} \snm{Villazon-Terrazas}},
+\runningauthor{Piedra et al.}
+\address[A]{Universidad Tecnica Privada de Loja \\
+E-mail: nopiedra@utpl.edu.ec}
+\address[B]{Universidad de Cuenca\\
+E-mail: \{victor.saquicela,mauricio.espinoza\}@ucuenca.edu.ec}
+\address[C]{iSOCO, Avda. Parten\'on. 16-18, 28042, Madrid, Spain\\
+E-mail: bvillazon@isoco.com}
+
+\vspace{-7mm}
+\begin{abstract}
+\end{abstract}
+
+\begin{keyword}
+smart cities
+\end{keyword}
+
+\end{frontmatter}
+
+\input{introduction}
+
+\input{architecture}
+
+\input{conclusions}
+
+
+\paragraph{Acknowledgments}
+This work has been supported by the ...
+We thank ... \\
+\bibliographystyle{abbrv}
+
+\bibliography{sigproc}  
+
+
+\end{document}
